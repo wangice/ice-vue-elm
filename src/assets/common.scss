@@ -1,0 +1,23 @@
+@font-face {
+    font-family: msyh;
+    src: url('./配色与文字字体/SourceHanSansCN-Normal_0.otf');
+}
+body, html {
+    font-family: msyh;
+    width: 100%;
+    margin: 0px;
+  
+}
+#app {
+    min-height: 100vh;
+    height: max-content;
+    height: -webkit-fill-available;
+}
+@media screen and (max-width: 410px) and (max-height: 740px){
+    .moblie {
+        height: 135vh !important;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
