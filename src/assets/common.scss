@@ -1,18 +1,33 @@
-@font-face {
-    font-family: msyh;
-    src: url('./配色与文字字体/SourceHanSansCN-Normal_0.otf');
-}
-body, html {
-    font-family: msyh;
-    width: 100%;
-    margin: 0px;
-  
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        outline: none;
+    }
 }
 #app {
     min-height: 100vh;
     height: max-content;
     height: -webkit-fill-available;
+    background-color: #F5F5F5;
 }
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 410px) and (max-height: 740px){
     .moblie {
         height: 135vh !important;
